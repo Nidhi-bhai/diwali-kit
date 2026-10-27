@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /diwali-kit/pack/
+
+Sitemap: https://nidhi-bhai.github.io/diwali-kit/sitemap.xml

@@ -1,0 +1,8 @@
+{
+  "name": "diwali-kit",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "pdf": "python3 scripts/build_pdf.py"
+  }
+}
