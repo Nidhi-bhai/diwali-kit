@@ -80,8 +80,44 @@ footer.site { margin-top: 2.5rem; padding: 1.2rem 0 2rem; border-top: 1px solid 
 .wish canvas { width: 100%; height: auto; border-radius: 12px; background: #efe4d4; }
 .card-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
 .card-actions .btn { font-size: 0.95rem; }
+.design-picker { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.2rem 0 0.6rem; }
+.design-picker button {
+  flex: 0 0 auto;
+  min-width: 9.2rem;
+  min-height: 4.4rem;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.5rem 0.7rem;
+  font: inherit;
+  color: var(--ink);
+}
+.design-picker button[aria-pressed="true"] { border-color: var(--maroon); background: #fff4e4; }
+.design-picker button:disabled { opacity: 0.55; }
+.design-name, .design-when { display: block; }
+.design-when { color: var(--muted); font-size: 0.85rem; margin-top: 0.2rem; }
+#card-canvas { width: min(100%, 320px); height: auto; border-radius: 12px; margin: 0.8rem auto; display: block; background: #efe4d4; }
+.blessing { font-size: 1.15rem; }
+.maker-page { padding-bottom: 6.5rem; }
+.share-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
+  background: #fbf6ee;
+  border-top: 1px solid var(--line);
+}
+.share-bar .btn { flex: 1 1 8.5rem; text-align: center; }
+.clock { font-size: 1.45rem; margin: 0.2rem 0 0.4rem; }
 @media (min-width: 800px) {
   .card-grid { grid-template-columns: 1fr 1fr; }
+  #card-canvas { max-width: 420px; }
 }
 code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
 @media (max-width: 640px) {
